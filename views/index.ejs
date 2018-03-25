@@ -1,0 +1,29 @@
+<%include Partials/header %>
+    <h1>Registration Form</h1>
+        <form method='POST' action='/users/add'>
+            <fieldset class="field">
+                <legend>Profile info</legend>
+                <br>
+                <label for="name">Your name</label><br>
+                <input type="text" name="name" placeholder="Enter your name">
+                <br><br>
+                <label for="name">Father name</label><br>
+                <input type="text" name="Fname" placeholder="Enter your father name">
+                <br><br>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" placeholder="Enter your password">
+                <br><br>
+                <label for="email">Your email</label><br>
+                <input type="email" name="email" placeholder="Enter your email">
+                <br><br>
+                <label for="address">Your address</label><br>
+                <input type="text" name="address" placeholder="Enter your address">
+                <br><br>
+                <label for="address">Your age</label><br>
+                <input type="text" name="age" placeholder="Enter your age">
+                <br><br><br>
+                <input type="submit" value='submit' name="Save my info">
+            </fieldset>
+        </form>
+        <h3><%= message %></h3>
+<%include Partials/footer %>

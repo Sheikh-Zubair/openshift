@@ -1,0 +1,34 @@
+<%include Partials/header %>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+        }
+    </style>
+    <h1>All Users</h1>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Fname</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Address</th>
+            <th>Age</th>            
+        </tr>
+        <% users.forEach(function(user){%>
+        <tr>
+        <td><%= user.Id %></td>    
+        <td><%= user.Name %></td>
+        <td><%= user.Fname %></td>
+        <td><%= user.Email %></td>
+        <td><%= user.Pass %></td>
+        <td><%= user.Address %></td>
+        <td><%= user.Age %></td>
+        <tr>
+        <%})%>
+    </table>
+<%include Partials/footer %>
